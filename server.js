@@ -80,7 +80,7 @@ app.get('/api/ticket', (req, res) => {
   if (!config.ticketFile) {
     return res.status(404).json({ error: 'No ticket uploaded yet' });
   }
-  const filePath = path.join(uploadsDir, 'ticket.pdf');
+  const filePath = path.join(uploadsDir, 'mysterygift.pdf');
   if (!fs.existsSync(filePath)) {
     return res.status(404).json({ error: 'File not found' });
   }
