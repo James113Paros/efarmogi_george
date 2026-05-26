@@ -85,7 +85,7 @@ app.get('/api/ticket', (req, res) => {
     return res.status(404).json({ error: 'File not found' });
   }
   res.setHeader('Content-Type', 'application/pdf');
-  res.setHeader('Content-Disposition', 'inline; filename="ticket.pdf"');
+  res.setHeader('Content-Disposition', 'inline; filename="mysterygift.pdf"');
   res.sendFile(filePath);
 });
 
